@@ -1,0 +1,68 @@
+.registration {
+   display: block;
+   padding: 50px 0;
+
+   // .registration__container
+   &__container {
+   }
+
+   // .registration__heading
+   &__heading {
+   }
+
+   // .registration__sub-heding
+   &__sub-heding {
+   }
+
+   // .registration__points
+   &__points {
+      max-width: 800px;
+      margin: 0 auto;
+   }
+}
+
+
+.points {
+
+   // .points__item
+   &__item {
+      margin-bottom: 20px;
+      display: flex;
+   }
+
+   // .points__num
+   &__num {
+      font-family: $fontFamily, sans-serif;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 30px;
+      width: 50px;
+      height: 50px;
+      background: #FE339C;
+      color: #fff;
+      font-size: 25px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      text-align: center;
+   }
+
+   // .points__content
+   &__content {
+   }
+
+   // .points__title
+   &__title {
+      font-family: $fontFamily, sans-serif;
+      font-weight: 700;
+      font-size: 1.17em;
+      margin-bottom: 15px;
+      margin-top: 12px;
+   }
+
+   // .points__desc
+   &__desc {
+      margin-bottom: 10px;
+   }
+}

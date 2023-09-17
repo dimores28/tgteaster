@@ -1,0 +1,153 @@
+.testimonials {
+
+   // .testimonials__container
+   &__container {
+      padding: 50px 0px;
+   }
+
+   &__meta {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #8f9090;
+      @include adaptiveValue("font-size", 16, 12);
+   }
+
+   // .testimonials__user
+   &__user {
+      
+   }
+
+   // .testimonials__data
+   &__data {
+   }
+
+   // .testimonials__text
+   &__text {
+      @include adaptiveValue("font-size", 18, 14);
+      font-weight: 300;
+      margin-bottom: 10px;
+   }
+
+   &__answer {
+      border-top: 1px solid #dee4f1;
+      padding-top: 5px;
+      margin-top: 5px;
+      font-size: 10px;
+   }
+
+   .swiper {
+      padding: 10px 15px 40px 15px;
+   }
+
+  .swiper-wrapper {
+  
+  }
+
+
+   .swiper-slide {
+      border: 3px solid #FE339C;
+      padding: 20px 10px;
+      border-radius: 24px;
+      height: auto;
+
+      display: flex;
+      flex-direction: column;
+
+      &.negative-testimonials {
+         border: 3px solid #ff1e00;
+      }
+   }
+
+   .swiper-pagination {
+      bottom: 0px !important;
+   }
+
+   .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+      border: 1px solid #8f9090;
+   }
+
+   .swiper-pagination-bullet-active {
+      background: #FE339C;
+   }
+
+   .swiper-button-prev:after {
+      content: '←';
+   }
+
+   .swiper-button-next:after {
+      content: '→';
+   }
+
+   .swiper-button-next, .swiper-button-prev {
+      top: 95%;
+
+      @media (max-width: em(896)){
+         top: 93.5%;
+      }
+
+      @media (max-width: em(528)){
+         top: 94.5%;
+      }
+   }
+
+   .swiper-button-prev, .swiper-rtl .swiper-button-next {
+      left: 38%;
+      right: auto;
+
+      @media (max-width: em(1070)){
+         left: 35%;
+      }
+
+      @media (max-width: em(896)){
+         left: 30%; 
+      }
+
+      @media (max-width: em(687)){
+         left: 22%; 
+      }
+
+      @media (max-width: em(687)){
+         left: 14%; 
+      }
+
+      @media (max-width: em(373)){
+         left: 8%; 
+      }
+   }
+
+   .swiper-button-next, .swiper-rtl .swiper-button-prev {
+      right: 38%;
+      left: auto;
+
+      @media (max-width: em(1070)){
+         right: 35%;  
+      }
+
+      @media (max-width: em(896)){
+         right: 30%; 
+      }
+
+      @media (max-width: em(687)){
+         right: 22%; 
+      }
+
+      @media (max-width: em(687)){
+         right: 14%; 
+      }
+
+      @media (max-width: em(373)){
+         right: 8%; 
+      }
+  }
+}
+
+
+
+
+
+
+

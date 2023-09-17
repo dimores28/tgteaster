@@ -1,0 +1,44 @@
+.tabs {
+	// .tabs__navigation
+	&__navigation {
+		justify-content: center;
+		margin-bottom: 20px;
+		display: none;
+
+		@media (max-width:$mobile){
+			display: flex;
+			flex-wrap: wrap;
+			gap: 16px;
+		}
+	}
+	// .tabs__title
+	&__title {
+		border: 2px solid #072125;
+		padding: 5px 10px;
+		font-size: 18px;
+		font-weight: 700;
+		margin-right: 10px;
+		border-radius: 20px;
+		transition: all 0.2s ease-in;
+
+		&._tab-active {
+			border: 1px solid #000;
+			color: #fff;
+			background: #FE339C;
+		}
+	}
+	// .tabs__content
+	&__content {
+		// border: 1px solid #eee;
+		// padding: toRem(10) toRem(15);
+		display: flex;
+		gap: 30px;
+	}
+	// .tabs__body
+	&__body {
+		@media (max-width:$mobile){
+			 width: 300px; 
+			 margin: 0 auto;
+		}
+	}
+}

@@ -1,0 +1,98 @@
+.prices {
+   display: block;
+   padding: 50px 0px;
+
+   // .prices__heading
+   &__heading {
+   }
+
+   // .prices__sub-heding
+   &__sub-heding {
+   }
+
+   // .prices__card
+   &__card {
+   }
+}
+
+.card {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+
+   &__content {
+
+   }
+
+   // .card__item
+   &__item {
+      // width: calc(100% / 3);
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+      padding: 30px 20px;
+      background: #fafafa;
+      border-radius: 24px;
+      flex-direction: column;
+      border: 1px solid rgba(7,33,37,.11);
+   }
+
+   // .card__title
+   &__title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 32px;
+   }
+
+   // .card__price
+   &__price {
+      font-family: $fontFamily, sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 120%;
+      margin-bottom: 20px;
+
+      s {
+         font-size: 25px;
+         color: #7c7c7c;
+      }
+   }
+
+   // .card__advanteges
+   &__advanteges {
+   }
+
+   // .card__btn
+   &__btn {
+      // display: block;
+      margin: 0 auto;
+      @include adaptiveValue("width", 180, 150);
+      @include adaptiveValue("height", 60, 45);
+   }
+}
+.advanteges {
+
+   // .advanteges__item
+   &__item {
+      display: block;
+      padding-left: 25px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 150%;
+      position: relative;
+
+      &:before {
+         content: "";
+         display: block;
+         position: absolute;
+         width: 18px;
+         height: 18px;
+         left: 0;
+         top: 2px;
+         background: url(../img/icons/li-check.svg) center no-repeat;
+         background-size: contain;
+     }
+   }
+}
+
