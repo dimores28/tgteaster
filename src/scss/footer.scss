@@ -13,7 +13,7 @@
    &__content {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      // align-items: center;
       flex-wrap: wrap;
       margin-bottom: 25px;
 
@@ -38,6 +38,12 @@
 
    // .footer__logo
    &__logo {
+      margin-top: -40px;
+      
+      @media (max-width:$mobile){
+          margin-top: 0; 
+      }
+
       img {
          width: 86px;
          height: 86px;
